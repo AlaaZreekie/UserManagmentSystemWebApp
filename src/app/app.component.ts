@@ -6,10 +6,11 @@ import { DirectivesComponent } from './directives/directives.component';
 import { NgifVsIfcomponentComponent } from "./ngif-vs-ifcomponent/ngif-vs-ifcomponent.component";
 import { ForComponentComponent } from "./for-component/for-component.component";
 import { SwitchComponentComponent } from "./switch-component/switch-component.component";
+import { AttributeDirectivesComponent } from "./attribute-directives/attribute-directives.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ForComponentComponent, SwitchComponentComponent],
+  imports: [RouterOutlet, ForComponentComponent, SwitchComponentComponent, AttributeDirectivesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
