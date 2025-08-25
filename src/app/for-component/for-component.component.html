@@ -1,0 +1,57 @@
+<p>for-component works!</p>
+
+
+<div class="row text-center">
+  <div class="col-4">
+      <h1>For Component</h1>
+  </div>
+</div>
+
+
+
+
+<div class="row text-center">
+  <div class="col-4">
+    <select name="" id="" class="p-2">
+        @for(emp of emps; track emp) {
+          <option [value]="emp.empNumber">
+            {{emp.empName}} - {{emp.empEmail}}
+          </option>
+        }
+
+    </select>
+  </div>
+  <div class="col-4">
+
+  </div>
+  <div class="col-4">
+
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col-4">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Email</th>
+            <th>Dept</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for(emp of emps; track emp) {
+            <tr>
+              <td>{{emp.empName}}</td>
+              <td>{{emp.empNumber}}</td>
+              <td>{{emp.empEmail}}</td>
+              <td>{{emp.empDept}}</td>
+
+            </tr>
+        }
+        </tbody>
+      </table>
+  </div>
+</div>
+
