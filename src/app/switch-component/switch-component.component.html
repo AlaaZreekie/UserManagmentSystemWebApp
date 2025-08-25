@@ -1,1 +1,31 @@
-<p>switch-component works!</p>
+<div class="row text-center">
+  <div class="col-4">
+      <h1>Switch Component</h1>
+  </div>
+</div>
+
+
+<div class="row text-center">
+  <div class="col-12">
+    <button class="btn btn-success m-1" (click)="set(1)">1st</button>
+    <button class="btn btn-danger m-1" (click)="set(2)">2st</button>
+    <button class="btn btn-primary m-1" (click)="set(3)">3st</button>
+  </div>
+
+  <div>
+    @switch(grade) {
+      @case(1) {
+        Done
+      }
+      @case(2) {
+        bla bla
+      }
+      @case(3) {
+        alooha 3mak
+      }
+      @default {
+        No resulte found ...
+      }
+    }
+  </div>
+</div>

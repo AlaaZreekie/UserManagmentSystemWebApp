@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class SwitchComponentComponent {
 
+  grade: number = 0;
+
+  set(x:number) {
+    this.grade = x;
+  }
 }
