@@ -4,7 +4,7 @@ import { DataBindingComponent } from '../data-binding/data-binding.component';
 
 @Component({
   selector: 'app-directives',
-  imports: [NgIf, DataBindingComponent ],
+  imports: [],
   templateUrl: './directives.component.html',
   styleUrl: './directives.component.scss'
 })

@@ -1,1 +1,40 @@
-<p>ngif-vs-ifcomponent works!</p>
+<div class="row text-center">
+  <h1>Hello world</h1>
+    <div class="col-12 m-3">
+        <b>Example of *ngIf vs if </b>
+    </div>
+</div>
+
+
+
+<div class="row text-center">
+  <div class="col4">
+        <div (click)="onClick()">
+          <input type="checkbox"> Tearms and condition
+        </div>
+        @if(!isChecked) {
+          <div>
+            <button class="btn btn-success">Submit</button>
+          </div>
+        }
+  </div>
+  <div class="col4">
+      @if(isInputBox) {
+        <div class="m-2">
+          <input type="text" value="ALOOHA">
+        </div>
+      }
+      <button class="btn btn-primary m-2" (click)="showField()">Show</button>
+      <button class="btn btn-danger m-2" (click)="hideField()">Hide</button>
+  </div>
+  <div class="col4">
+    <input type="text" class="m-1" [(ngModel)] = "inputFiled1">
+    <input type="text" class="m-1" [(ngModel)] = "inputFiled2">
+  </div>
+  @if(inputFiled1 === inputFiled2) {
+    <h1>Hello World, It me ALOOHA</h1>
+  } @else {
+    <h2> Bla bla</h2>
+  }
+
+</div>
