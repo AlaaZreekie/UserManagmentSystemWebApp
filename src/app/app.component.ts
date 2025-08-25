@@ -5,10 +5,11 @@ import { DataBindingComponent } from "./data-binding/data-binding.component";
 import { DirectivesComponent } from './directives/directives.component';
 import { NgifVsIfcomponentComponent } from "./ngif-vs-ifcomponent/ngif-vs-ifcomponent.component";
 import { ForComponentComponent } from "./for-component/for-component.component";
+import { SwitchComponentComponent } from "./switch-component/switch-component.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ForComponentComponent],
+  imports: [RouterOutlet, ForComponentComponent, SwitchComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
