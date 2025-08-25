@@ -1,1 +1,31 @@
-<p>data-binding works!</p>
+<p><strong>data-binding works!</strong> </p>
+
+<div>
+  <h4>One Way Data Binding</h4>
+  <div>
+      <p>1. Interpolation</p>
+      <p>This is the Topic for user {{topic}}: {{name}}</p>
+  </div>
+    <div>
+      <p>2. Property Binding</p>
+        <input type="text" name="" id="" [value]="topic">
+        <div style="height: 160px; width: 250px;">
+          <!-- The path now points to the assets folder -->
+          <img [src]="image" alt="A descriptive alt text" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p>2. Event Binding</p>
+        <button (click)="onSave()">Save</button>
+        <br>
+        <select (change)="onChange()">
+            <option value="ALOOHA">ALOOHA</option>
+            <option value="Syria">Syria</option>
+            <option value="Germany">Germany</option>
+            <option value="3Mak">3Mak</option>
+        </select>
+    </div>
+  </div>
+  <h3>Tow-Way DataBinding</h3>
+  <div>
+    <input type= "text" [(ngModel)]="name">
+    {{name}}
+  </div>
