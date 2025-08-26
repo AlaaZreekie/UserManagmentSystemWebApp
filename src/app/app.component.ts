@@ -12,7 +12,7 @@ import { LinkedSignalsComponent } from "./linked-signals/linked-signals.componen
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SignalsComponent, LinkedSignalsComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
