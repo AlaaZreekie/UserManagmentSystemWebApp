@@ -7,6 +7,6 @@ export const routes: Routes = [
   // {path: "", redirectTo: "user", pathMatch: 'full'},
 
   {path: "user", component: UserComponent},
-  {path: "data-binding", component: DataBindingComponent}
+  {path: "data-binding", component: DataBindingComponent},
   {}
 ];
