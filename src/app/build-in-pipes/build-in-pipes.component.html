@@ -1,1 +1,30 @@
-<p>build-in-pipes works!</p>
+<div class="m-3 text-center">
+  <h1 class="text-primary m-3">String types pipes</h1>
+  <h2>Pipes: {{angularPipes | uppercase}}</h2>
+  <h2>Pipes: {{angularPipes | lowercase}}</h2>
+  <h2>Pipes: {{angularPipes | titlecase}}</h2>
+  <h2>Pipes: {{angularPipes | slice: 4}}</h2>
+  <h2>Pipes: {{angularPipes | slice: 4 : 8}}</h2>
+  <h2>Pipes: {{angularPipes | slice: 4: -10}}</h2>
+  <h2>Pipes: {{angularPipes | slice:-10}}</h2>
+  <h2>Pipes: {{personData | json}}</h2>
+  <pre>Pipes: {{personData | json}}</pre>
+  <!-- number pipes -->
+  <h2>{{currentDate }}</h2>
+  <h2>{{currentDate | date}}</h2>
+  <!--'short' 'shortDate' 'shortTime' 'mediumTime' 'mediumDate' 'medium'-->
+  <!-- we can create custom pipe -->
+
+  <h2>Decimal : {{1034.543424 | number:'2.2'}}</h2>
+  <h2>ParcentPipe : {{100 | percent}}</h2>
+  <h2>CurrencyPipe : {{100 | currency : 'EUR'}}</h2>
+  <!-- 'non' 'EUR' 'INR' -->
+  <!-- we can use multi pipes and create pipes -->
+   <h2>Async pipe :
+      <ul>
+        @for(item of items | async; track item) {
+          <li>{{item}}</li>
+        }
+      </ul>
+   </h2>
+</div>
