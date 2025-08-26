@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FirstCustomPipePipe implements PipeTransform {
 
   transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+    return value ? '+963' + value : value;
   }
 
 }
