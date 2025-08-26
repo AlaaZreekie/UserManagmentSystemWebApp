@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, Signal, WritableSignal } from '@angular/core';
 
 @Component({
   selector: 'app-signals',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './signals.component.scss'
 })
 export class SignalsComponent {
+
+  value: WritableSignal<number> = signal(0)
+
+  onIncrement() {
+    this.value.update(v => v+1);
+  }
 
 }
